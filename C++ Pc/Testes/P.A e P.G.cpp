@@ -132,7 +132,8 @@ int main() {
             std::cout << "2-=======Sum of Geometric Progression=====\n";
             std::cout << "3-=======Formula.A========================\n";
             std::cout << "4-=======Geometric Ratio==================\n";
-            std::cout << "5-=======Exit=============================\n";
+            std::cout << "5-=======Settings=========================\n";
+            std::cout << "6-=======Exit=============================\n";
             cin >> chose;
             system("cls");
         }
@@ -142,7 +143,8 @@ int main() {
         else if (chose == 2) geometricProgression();
         else if (chose == 3) general();
         else if (chose == 4) razao();
-        else if (chose == 5) break;
+        else if (chose == 5) settings();
+        else if (chose == 6) break;
         else {
             menu = true;
         }
