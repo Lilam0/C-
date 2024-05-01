@@ -24,7 +24,11 @@ void arithmeticProgression() {
         cout << "The arithmetic sum is:\n";
         cout << num1 << "\n" << "Continuing in:";
 
-        if (0 == 0) tempos();
+        for (int i = tempo; i > 0; i--) {
+            std::cout << i << "..";
+            sleep_until(system_clock::now() + seconds(2));
+
+        }
     }
     else {
         menu = true;
@@ -50,8 +54,12 @@ void geometricProgression() {
         cout << "The the sum of Geometric Progression is:\n";
         cout << num1 << "\n" << "Continuing in:";
 
-        if (0 == 0) tempos();
-        
+        for (int i = tempo; i > 0; i--) {
+            std::cout << i << "..";
+            sleep_until(system_clock::now() + seconds(2));
+
+        }
+
     }
     else {
         menu = true;
@@ -70,12 +78,16 @@ void general() {
         cin >> num2;
         cout << "What's the ratio of the P.A?\n";
         cin >> auxi;
-        num1 = num1+((num2-1)*auxi);
+        num1 = num1 + ((num2 - 1) * auxi);
         cout << "The the 'n' terme is:\n";
         cout << num1 << "\n" << "Continuing in:";
-        if (0 == 0) tempos();
-        
-        
+        for (int i = tempo; i > 0; i--) {
+            std::cout << i << "..";
+            sleep_until(system_clock::now() + seconds(2));
+
+        }
+
+
     }
     else {
         menu = true;
@@ -91,12 +103,16 @@ void razao() {
     if (num1 != 0) {
         cout << "What's second number of the sequence?\n";
         cin >> num2;
-        num1 = num2/num1;
+        num1 = num2 / num1;
         cout << "The the ratio is:\n";
         cout << num1 << "\n" << "Continuing in:";
 
-        if (0 == 0) tempos();
-        
+        for (int i = tempo; i > 0; i--) {
+            std::cout << i << "..";
+            sleep_until(system_clock::now() + seconds(2));
+
+        }
+
     }
     else {
         menu = true;
@@ -112,17 +128,16 @@ void settings() {
     if (chose == 1) {
         cout << "Type a new waiting time";
         cin >> tempo;
-        cout << "The new time is:" << tempo<<"\n";
-        if (0 == 0) tempos();
-    }
-}
-void tempos() {
-    for (int i = tempo; i > 0; i--) {
-        cout << i << "..";
-        sleep_until(system_clock::now() + seconds(2));
+        cout << "The new time is:" << tempo << "\n";
+        for (int i = tempo; i > 0; i--) {
+            std::cout << i << "..";
+            sleep_until(system_clock::now() + seconds(2));
 
+        }
+        menu = true;
     }
 }
+
 int main() {
     while (continuar == true) {
         if (menu == true) {
