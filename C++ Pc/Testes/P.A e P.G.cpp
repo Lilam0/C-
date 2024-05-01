@@ -24,11 +24,7 @@ void arithmeticProgression() {
         cout << "The arithmetic sum is:\n";
         cout << num1 << "\n" << "Continuing in:";
 
-        for (int i = tempo; i > 0; i--) {
-            cout << i << "..";
-            sleep_until(system_clock::now() + seconds(2));
-
-        }
+        if (0 == 0) tempos();
     }
     else {
         menu = true;
@@ -54,11 +50,7 @@ void geometricProgression() {
         cout << "The the sum of Geometric Progression is:\n";
         cout << num1 << "\n" << "Continuing in:";
 
-        for (int i = tempo; i > 0; i--) {
-            cout << i << "..";
-            sleep_until(system_clock::now() + seconds(2));
-
-        }
+        if (0 == 0) tempos();
         
     }
     else {
@@ -81,12 +73,8 @@ void general() {
         num1 = num1+((num2-1)*auxi);
         cout << "The the 'n' terme is:\n";
         cout << num1 << "\n" << "Continuing in:";
-
-        for (int i = tempo; i > 0; i--) {
-            cout << i << "..";
-            sleep_until(system_clock::now() + seconds(2));
-
-        }
+        if (0 == 0) tempos();
+        
         
     }
     else {
@@ -107,11 +95,7 @@ void razao() {
         cout << "The the ratio is:\n";
         cout << num1 << "\n" << "Continuing in:";
 
-        for (int i = tempo; i > 0; i--) {
-            cout << i << "..";
-            sleep_until(system_clock::now() + seconds(2));
-
-        }
+        if (0 == 0) tempos();
         
     }
     else {
@@ -129,14 +113,16 @@ void settings() {
         cout << "Type a new waiting time";
         cin >> tempo;
         cout << "The new time is:" << tempo<<"\n";
-        for (int i = tempo; i > 0; i--) {
-            cout << i << "..";
-            sleep_until(system_clock::now() + seconds(2));
-
-        }
+        if (0 == 0) tempos();
     }
 }
+void tempos() {
+    for (int i = tempo; i > 0; i--) {
+        cout << i << "..";
+        sleep_until(system_clock::now() + seconds(2));
 
+    }
+}
 int main() {
     while (continuar == true) {
         if (menu == true) {
